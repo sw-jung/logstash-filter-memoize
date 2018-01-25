@@ -48,7 +48,7 @@ class LogStash::Filters::Memoize < LogStash::Filters::Base
   # Maximum size of cache.
   config :cache_size, :validate => :number, :default => 1000
 
-  # The TTL(Time To Live) of cached value.
+  # The TTL(Time To Live) in second of cached value.
   config :ttl, :validate => :number
   
   public
